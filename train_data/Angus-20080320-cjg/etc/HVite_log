@@ -1,0 +1,61 @@
+HVite -A -D -T 1 -l * -o SWT -b silence -C /data/svn-mirror/Main/Trunk/Scripts/AcousticModel_scripts/HTK/AMCreate_scripts/input_files/config -H ./interim_files/hmm7/macros -H ./interim_files/hmm7/hmmdefs -i ./interim_files/aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I ./interim_files/words.mlf -S ./interim_files/train.scp ./interim_files/dict1 ./interim_files/monophones1 
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+#                 NUMCEPS                       12
+#                 CEPLIFTER                     22
+#                 NUMCHANS                      26
+#                 PREEMCOEF               0.970000
+#                 USEHAMMING                  TRUE
+#                 WINDOWSIZE         250000.000000
+#                 SAVEWITHCRC                 TRUE
+#                 SAVECOMPRESSED              TRUE
+#                 TARGETRATE         100000.000000
+#                 TARGETKIND          MFCC_0_D_N_Z
+
+Read 39 physical / 39 logical HMMs
+Label file will be used to align each file
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0158.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+silence DOES THAT LOOK GOOD silence  ==  [249 frames] -47.1309 [Ac=-11735.6 LM=0.0] (Act=7.2)
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0159.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+silence THEY LOOK AS THOUGH HE HAD BEEN DRUMMING A PIANO ALL HIS LIFE silence  ==  [499 frames] -51.7348 [Ac=-25815.7 LM=0.0] (Act=13.1)
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0160.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+silence YOU WANT TO GO OVER AND SEE HIS GANG THROW DIRT silence  ==  [499 frames] -49.0999 [Ac=-24500.9 LM=0.0] (Act=10.3)
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0161.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+silence TAKE AWAY THEIR FOREMAN AND THEY WOULDN'T BE WORTH THEIR GRUB silence  ==  [512 frames] -49.9132 [Ac=-25555.6 LM=0.0] (Act=12.5)
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0162.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+silence THAT'S THE SUB-FOREMAN EXPLAINED THORPE silence  ==  [436 frames] -50.3729 [Ac=-21962.6 LM=0.0] (Act=8.8)
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0163.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+silence PHILIP MADE NO EFFORT TO FOLLOW silence  ==  [336 frames] -49.3029 [Ac=-16565.8 LM=0.0] (Act=9.2)
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0164.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+silence HE CAME FIRST A YEAR AGO AND REVEALED HIMSELF TO JEANNE silence  ==  [524 frames] -51.5747 [Ac=-27025.1 LM=0.0] (Act=12.3)
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0165.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+silence THEY ARE TO ATTACK YOUR CAMP TOMORROW NIGHT silence  ==  [436 frames] -50.1981 [Ac=-21886.4 LM=0.0] (Act=11.6)
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0166.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+silence TWO DAYS AGO JEANNE LEARNED WHERE HER FATHER'S MEN WERE HIDING silence  ==  [624 frames] -48.6509 [Ac=-30358.1 LM=0.0] (Act=10.1)
+Aligning File: /data/UserSubmissions/Quarantine/Angus-20080320-cjg/mfc/a0167.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+silence I WAS NEAR THE CABIN AND SAW YOU silence  ==  [424 frames] -47.5173 [Ac=-20147.3 LM=0.0] (Act=12.8)
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+                  NUMCEPS                       12
+                  CEPLIFTER                     22
+                  NUMCHANS                      26
+                  PREEMCOEF               0.970000
+                  USEHAMMING                  TRUE
+                  WINDOWSIZE         250000.000000
+                  SAVEWITHCRC                 TRUE
+                  SAVECOMPRESSED              TRUE
+                  TARGETRATE         100000.000000
+                  TARGETKIND          MFCC_0_D_N_Z
+

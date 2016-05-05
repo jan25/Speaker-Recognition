@@ -1,0 +1,63 @@
+/usr/local/bin/HVite -A -D -T 1 -l * -a -b SENT-END -m -C /data/svn-mirror/Main/VoxForge/lib/Corpus/Quarantine/Submission/Audio/wav_config -H /data/svn-mirror/Main/VoxForge/lib/Corpus/Quarantine/Submission/Audio/HTK_AcousticModel-2012-07-24_16kHz_16bit_MFCC_O_D/macros -H /data/svn-mirror/Main/VoxForge/lib/Corpus/Quarantine/Submission/Audio/HTK_AcousticModel-2012-07-24_16kHz_16bit_MFCC_O_D/hmmdefs -m -t 250.0 150.0 1000.0 -I /tmp/B4Y_8YOuQb/words.mlf -i /tmp/B4Y_8YOuQb/aligned.out -S /tmp/B4Y_8YOuQb/fileList /data/svn-mirror/SpeechCorpus/Trunk/Lexicon/VoxForge/VoxForgeDict /data/svn-mirror/Main/VoxForge/lib/Corpus/Quarantine/Submission/Audio/HTK_AcousticModel-2012-07-24_16kHz_16bit_MFCC_O_D/tiedlist 
+
+HTK Configuration Parameters[11]
+  Module/Tool     Parameter                  Value
+#                 NUMCEPS                       12
+#                 CEPLIFTER                     22
+#                 NUMCHANS                      26
+#                 PREEMCOEF               0.970000
+#                 USEHAMMING                  TRUE
+#                 WINDOWSIZE         250000.000000
+#                 SAVEWITHCRC                 TRUE
+#                 SAVECOMPRESSED              TRUE
+#                 TARGETRATE         100000.000000
+#                 TARGETKIND          MFCC_D_N_Z_0
+#                 SOURCEFORMAT                 WAV
+
+Read 8294 physical / 9429 logical HMMs
+Label file will be used to align each file
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-04.wav
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END HUNT AND PECK TYPING USING THE FINGERS ARE PRETTY MUCH OUT OF THE QUESTION SENT-END  ==  [573 frames] -61.1048 [Ac=-35013.1 LM=0.0] (Act=13.2)
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-05.wav
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END DEVICES WITH A TOUCH SCREEN INTERFACE OFTEN USE AN ON-SCREEN KEYBOARD OR HANDWRITING SENT-END  ==  [873 frames] -58.8123 [Ac=-51343.1 LM=0.0] (Act=11.3)
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-06.wav
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END RECOGNITION FOR INPUTTING TEXT THIS HAS A COUPLE OF DRAWBACKS SENT-END  ==  [761 frames] -57.7890 [Ac=-43977.4 LM=0.0] (Act=13.2)
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-07.wav
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END THE KEYBOARD WHETHER IT'S AN ON-SCREEN VERSION OR NOT STRONGLY REDUCES SENT-END  ==  [773 frames] -58.1359 [Ac=-44939.1 LM=0.0] (Act=10.8)
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-08.wav
+Created lattice with 8 nodes / 7 arcs from label file
+SENT-END THE AMOUNT OF AVAILABLE SCREEN REAL-ESTATE SENT-END  ==  [523 frames] -57.4887 [Ac=-30066.6 LM=0.0] (Act=10.2)
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-09.wav
+Created lattice with 18 nodes / 17 arcs from label file
+SENT-END ON TOP OF THAT THUMBING OR THUMB TYPING PUTS A LOT OF STRAIN ON THE THUMB SENT-END  ==  [786 frames] -56.1751 [Ac=-44153.6 LM=0.0] (Act=11.8)
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-10.wav
+Created lattice with 11 nodes / 10 arcs from label file
+SENT-END WHICH IS NOT AS DEXTEROUS AS THE FINGERS ARE SENT-END  ==  [461 frames] -57.4739 [Ac=-26495.5 LM=0.0] (Act=10.5)
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-11.wav
+Created lattice with 11 nodes / 10 arcs from label file
+SENT-END A GOOD SOLUTION WOULD BE TO USE SPEECH RECOGNITION SENT-END  ==  [573 frames] -57.1433 [Ac=-32743.1 LM=0.0] (Act=10.0)
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-12.wav
+Created lattice with 14 nodes / 13 arcs from label file
+SENT-END ESPECIALLY SINCE MOST OF THESE DEVICES OFTEN ALREADY HAVE A BUILT-IN MICROPHONE SENT-END  ==  [686 frames] -58.9817 [Ac=-40461.5 LM=0.0] (Act=12.4)
+Aligning File: /tmp/B4Y_8YOuQb/Anniepoo-20140308-bft/rb-13.wav
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END MANY PHONES ALREADY OFFER THE POSSIBILITY OF SO-CALLED VOICE DIALING SENT-END  ==  [773 frames] -56.5026 [Ac=-43676.5 LM=0.0] (Act=10.4)
+
+HTK Configuration Parameters[11]
+  Module/Tool     Parameter                  Value
+                  NUMCEPS                       12
+                  CEPLIFTER                     22
+                  NUMCHANS                      26
+                  PREEMCOEF               0.970000
+                  USEHAMMING                  TRUE
+                  WINDOWSIZE         250000.000000
+                  SAVEWITHCRC                 TRUE
+                  SAVECOMPRESSED              TRUE
+                  TARGETRATE         100000.000000
+                  TARGETKIND          MFCC_D_N_Z_0
+                  SOURCEFORMAT                 WAV
+

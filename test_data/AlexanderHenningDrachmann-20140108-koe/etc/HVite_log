@@ -1,0 +1,63 @@
+/usr/local/bin/HVite -A -D -T 1 -l * -a -b SENT-END -m -C /data/svn-mirror/Main/Trunk/Scripts/VoxForge/lib/Corpus/Quarantine/Submission/Audio/wav_config -H /data/svn-mirror/Main/Trunk/Scripts/VoxForge/lib/Corpus/Quarantine/Submission/Audio/HTK_AcousticModel-2012-07-24_16kHz_16bit_MFCC_O_D/macros -H /data/svn-mirror/Main/Trunk/Scripts/VoxForge/lib/Corpus/Quarantine/Submission/Audio/HTK_AcousticModel-2012-07-24_16kHz_16bit_MFCC_O_D/hmmdefs -m -t 250.0 150.0 1000.0 -I /tmp/EjxsN72NPq/words.mlf -i /tmp/EjxsN72NPq/aligned.out -S /tmp/EjxsN72NPq/fileList /data/svn-mirror/SpeechCorpus/Trunk/Lexicon/VoxForge/VoxForgeDict /data/svn-mirror/Main/Trunk/Scripts/VoxForge/lib/Corpus/Quarantine/Submission/Audio/HTK_AcousticModel-2012-07-24_16kHz_16bit_MFCC_O_D/tiedlist 
+
+HTK Configuration Parameters[11]
+  Module/Tool     Parameter                  Value
+#                 NUMCEPS                       12
+#                 CEPLIFTER                     22
+#                 NUMCHANS                      26
+#                 PREEMCOEF               0.970000
+#                 USEHAMMING                  TRUE
+#                 WINDOWSIZE         250000.000000
+#                 SAVEWITHCRC                 TRUE
+#                 SAVECOMPRESSED              TRUE
+#                 TARGETRATE         100000.000000
+#                 TARGETKIND          MFCC_D_N_Z_0
+#                 SOURCEFORMAT                 WAV
+
+Read 8294 physical / 9429 logical HMMs
+Label file will be used to align each file
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0457.wav
+Created lattice with 7 nodes / 6 arcs from label file
+SENT-END IT WAS SANCTIFICATION AND SALVATION SENT-END  ==  [573 frames] -56.0293 [Ac=-32104.8 LM=0.0] (Act=8.5)
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0458.wav
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END THE HISTORY OF THE EIGHTEENTH CENTURY IS WRITTEN ERNEST PROMPTED SENT-END  ==  [686 frames] -59.1040 [Ac=-40545.4 LM=0.0] (Act=11.5)
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0459.wav
+Created lattice with 8 nodes / 7 arcs from label file
+SENT-END THEY ARE NOT BIOLOGISTS NOR SOCIOLOGISTS SENT-END  ==  [611 frames] -56.8910 [Ac=-34760.4 LM=0.0] (Act=9.3)
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0460.wav
+Created lattice with 14 nodes / 13 arcs from label file
+SENT-END THE MORE HIS OPPONENTS GREW EXCITED THE MORE ERNEST DELIBERATELY EXCITED THEM SENT-END  ==  [786 frames] -59.7008 [Ac=-46924.8 LM=0.0] (Act=10.8)
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0461.wav
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END BY VIRTUE OF THAT POWER WE SHALL REMAIN IN POWER SENT-END  ==  [536 frames] -57.5637 [Ac=-30854.1 LM=0.0] (Act=11.1)
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0462.wav
+Created lattice with 8 nodes / 7 arcs from label file
+SENT-END ONE GUESS WILL DO ERNEST RETORTED SENT-END  ==  [473 frames] -56.9639 [Ac=-26943.9 LM=0.0] (Act=9.6)
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0463.wav
+Created lattice with 9 nodes / 8 arcs from label file
+SENT-END TAKE MY ADVICE AND ACCEPT THE VACATION SENT-END  ==  [623 frames] -55.6234 [Ac=-34653.4 LM=0.0] (Act=9.9)
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0464.wav
+Created lattice with 8 nodes / 7 arcs from label file
+SENT-END I COULD NOT AGREE WITH ERNEST SENT-END  ==  [473 frames] -56.8457 [Ac=-26888.0 LM=0.0] (Act=10.1)
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0465.wav
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END BUT SUCH DIVERGENCE OF OPINION WOULD CONSTITUTE NO MENACE TO SOCIETY SENT-END  ==  [773 frames] -59.3065 [Ac=-45844.0 LM=0.0] (Act=12.0)
+Aligning File: /tmp/EjxsN72NPq/AlexanderHenningDrachmann-20140108-koe/b0466.wav
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END IT IS DOG EAT DOG AND YOU ATE THEM UP SENT-END  ==  [561 frames] -58.4363 [Ac=-32782.8 LM=0.0] (Act=11.2)
+
+HTK Configuration Parameters[11]
+  Module/Tool     Parameter                  Value
+                  NUMCEPS                       12
+                  CEPLIFTER                     22
+                  NUMCHANS                      26
+                  PREEMCOEF               0.970000
+                  USEHAMMING                  TRUE
+                  WINDOWSIZE         250000.000000
+                  SAVEWITHCRC                 TRUE
+                  SAVECOMPRESSED              TRUE
+                  TARGETRATE         100000.000000
+                  TARGETKIND          MFCC_D_N_Z_0
+                  SOURCEFORMAT                 WAV
+

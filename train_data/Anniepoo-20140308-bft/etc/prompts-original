@@ -1,0 +1,10 @@
+rb-04 hunt and peck typing using the fingers are pretty much out of the question. 
+rb-05 Devices with a touch screen interface often use an on-screen keyboard, or handwriting 
+rb-06 recognition for inputting text. This has a couple of drawbacks. 
+rb-07 The keyboard, whether it's an on-screen version or not, strongly reduces 
+rb-08 the amount of available "screen real-estate". 
+rb-09 On top of that thumbing or thumb typing puts a lot of strain on the thumb, 
+rb-10 which is not as dexterous as the fingers are. 
+rb-11 A good solution would be to use speech recognition, 
+rb-12 especially since most of these devices often already have a built-in microphone. 
+rb-13 Many phones already offer the possibility of so-called voice dialing. 

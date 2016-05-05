@@ -1,0 +1,420 @@
+STAT: jconf successfully finalized
+STAT: *** loading AM00 _default
+Stat: init_phmm: Reading in HMM definition
+Stat: rdhmmdef: ascii format HMM definition
+Stat: rdhmmdef: limit check passed
+Stat: check_hmm_restriction: an HMM with several arcs from initial state found: "sp"
+Stat: rdhmmdef: this HMM requires multipath handling at decoding
+Stat: init_phmm: defined HMMs:  8294
+Stat: init_phmm: loading ascii hmmlist
+Stat: init_phmm: logical names:  9429 in HMMList
+Stat: init_phmm: base phones:    44 used in logical
+Stat: init_phmm: finished reading HMM definitions
+STAT: m_fusion: force multipath HMM handling by user request
+STAT: making pseudo bi/mono-phone for IW-triphone
+Stat: hmm_lookup: 1086 pseudo phones are added to logical HMM list
+STAT: *** AM00 _default loaded
+STAT: *** loading LM00 _default
+STAT: reading [/tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe.dfa] and [/tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe.dict]...
+Stat: init_voca: read 77 words
+STAT: done
+STAT: Gram #0 AndreyBarrientosCostaRica-20130710-oqe registered
+STAT: Gram #0 AndreyBarrientosCostaRica-20130710-oqe: new grammar loaded, now mash it up for recognition
+STAT: Gram #0 AndreyBarrientosCostaRica-20130710-oqe: extracting category-pair constraint for the 1st pass
+STAT: Gram #0 AndreyBarrientosCostaRica-20130710-oqe: installed
+STAT: Gram #0 AndreyBarrientosCostaRica-20130710-oqe: turn on active
+STAT: grammar update completed
+STAT: *** LM00 _default loaded
+STAT: ------
+STAT: All models are ready, go for final fusion
+STAT: [1] create MFCC extraction instance(s)
+STAT: *** create MFCC calculation modules from AM
+STAT: AM 0 _default: create a new module MFCC01
+STAT: 1 MFCC modules created
+STAT: [2] create recognition processing instance(s) with AM and LM
+STAT: composing recognizer instance SR00 _default (AM00 _default, LM00 _default)
+STAT: Building HMM lexicon tree
+STAT: lexicon size: 1057 nodes
+STAT: coordination check passed
+STAT: wchmm (re)build completed
+STAT: SR00 _default composed
+STAT: [3] initialize for acoustic HMM calculation
+Stat: outprob_init: state-level mixture PDFs, use calc_mix()
+Stat: addlog: generating addlog table (size = 1953 kB)
+Stat: addlog: addlog table generated
+STAT: [4] prepare MFCC storage(s)
+STAT: All init successfully done
+
+STAT: ###### initialize input device
+----------------------- System Information begin ---------------------
+JuliusLib rev.4.2.1 (standard)
+
+Engine specification:
+ -  Base setup   : standard
+ -  Supported LM : DFA, N-gram, Word
+ -  Extension    : ShortWordTree StrictIWCD2
+ -  Compiled by  : gcc -O6 -fomit-frame-pointer
+
+------------------------------------------------------------
+Configuration of Modules
+
+ Number of defined modules: AM=1, LM=1, SR=1
+
+ Acoustic Model (with input parameter spec.):
+ - AM00 "_default"
+	hmmfilename=/data/svn-mirror/Main/Trunk/Scripts/VoxForge/lib/Corpus/Quarantine/Submission/Audio/HTK_AcousticModel-2012-07-24_16kHz_16bit_MFCC_O_D/hmmdefs
+	hmmmapfilename=/data/svn-mirror/Main/Trunk/Scripts/VoxForge/lib/Corpus/Quarantine/Submission/Audio/HTK_AcousticModel-2012-07-24_16kHz_16bit_MFCC_O_D/tiedlist
+
+ Language Model:
+ - LM00 "_default"
+	grammar #1:
+	    dfa  = /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe.dfa
+	    dict = /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe.dict
+
+ Recognizer:
+ - SR00 "_default" (AM00, LM00)
+
+------------------------------------------------------------
+Speech Analysis Module(s)
+
+[MFCC01]  for [AM00 _default]
+
+ Acoustic analysis condition:
+	       parameter = MFCC_0_D_N_Z (25 dim. from 12 cepstrum + c0, abs energy supressed with CMN)
+	sample frequency = 16000 Hz
+	   sample period =  625  (1 = 100ns)
+	     window size =  400 samples (25.0 ms)
+	     frame shift =  160 samples (10.0 ms)
+	    pre-emphasis = 0.97
+	    # filterbank = 24
+	   cepst. lifter = 22
+	      raw energy = False
+	energy normalize = False
+	    delta window = 2 frames (20.0 ms) around
+	     hi freq cut = OFF
+	     lo freq cut = OFF
+	 zero mean frame = OFF
+	       use power = OFF
+	             CVN = OFF
+	            VTLN = OFF
+    spectral subtraction = off
+  cepstral normalization = sentence CMN
+	 base setup from = Julius defaults
+
+------------------------------------------------------------
+Acoustic Model(s)
+
+[AM00 "_default"]
+
+ HMM Info:
+    8294 models, 7236 states, 7236 mpdfs, 7236 Gaussians are defined
+	      model type = context dependency handling ON
+      training parameter = MFCC_N_D_Z_0
+	   vector length = 25
+	number of stream = 1
+	     stream info = [0-24]
+	cov. matrix type = DIAGC
+	   duration type = NULLD
+	max mixture size = 1 Gaussians
+     max length of model = 5 states
+     logical base phones = 44
+       model skip trans. = exist, require multi-path handling
+      skippable models = sp (1 model(s))
+
+ AM Parameters:
+        Gaussian pruning = none (full computation)  (-gprune)
+    short pause HMM name = "sp" specified, "sp" applied (physical)  (-sp)
+  cross-word CD on pass1 = handle by approx. (use average prob. of same LC)
+   sp transition penalty = -1.0
+
+------------------------------------------------------------
+Language Model(s)
+
+[LM00 "_default"] type=grammar
+
+ DFA grammar info:
+      89 nodes, 97 arcs, 77 terminal(category) symbols
+      category-pair matrix: 424 bytes (7244 bytes allocated)
+
+ Vocabulary Info:
+        vocabulary size  = 77 words, 301 models
+        average word len = 3.9 models, 11.7 states
+       maximum state num = 36 nodes per word
+       transparent words = not exist
+       words under class = not exist
+
+ Parameters:
+   found sp category IDs =
+
+------------------------------------------------------------
+Recognizer(s)
+
+[SR00 "_default"]  AM00 "_default"  +  LM00 "_default"
+
+ Lexicon tree:
+	 total node num =   1057
+	  root node num =     77
+	  leaf node num =     77
+
+	(-penalty1) IW penalty1 = +0.0
+	(-penalty2) IW penalty2 = +0.0
+	(-cmalpha)CM alpha coef = 0.050000
+
+ Search parameters: 
+	    multi-path handling = yes, multi-path mode enabled
+	(-b) trellis beam width = 500
+	(-bs)score pruning thres= disabled
+	(-n)search candidate num= 10
+	(-s)  search stack size = 500
+	(-m)    search overflow = after 2000 hypothesis poped
+	        2nd pass method = searching sentence, generating N-best
+	(-b2)  pass2 beam width = 500
+	(-lookuprange)lookup range= 5  (tm-5 <= t <tm+5)
+	(-sb)2nd scan beamthres = 80.0 (in logscore)
+	(-n)        search till = 10 candidates found
+	(-output)    and output = 1 candidates out of above
+	 IWCD handling:
+	   1st pass: approximation (use average prob. of same LC)
+	   2nd pass: strict (apply when expanding hypo. )
+	 all possible words will be expanded in 2nd pass
+	 build_wchmm2() used
+	 lcdset limited by word-pair constraint
+	short pause segmentation = off
+	fall back on search fail = off, returns search failure
+
+------------------------------------------------------------
+Decoding algorithm:
+
+	1st pass input processing = (forced) buffered, batch
+	1st pass method = 1-best approx. generating indexed trellis
+	output word confidence measure based on search-time scores
+
+------------------------------------------------------------
+FrontEnd:
+
+ Input stream:
+	             input type = waveform
+	           input source = waveform file
+	          input filelist = /tmp/_Bl717XB8v/fileList
+	          sampling freq. = 16000 Hz required
+	         threaded A/D-in = supported, off
+	   zero frames stripping = on
+	         silence cutting = off
+	    long-term DC removal = off
+	      reject short input = off
+
+----------------------- System Information end -----------------------
+
+------
+...................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0473.wav
+STAT: 52000 samples (3.25 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> THE NIGHT WAS CALM AND SNOWY <s>
+pass1_best_wordseq: 0 2 3 4 5 6 7 1
+pass1_best_phonemeseq: sil | dh ax | n ay t | w aa z | k aa m | ae n d | s n ow iy | sil
+pass1_best_score: -7722.070801
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 24 generated, 24 pushed, 25 nodes popped in 323
+sentence1: <s> THE NIGHT WAS CALM AND SNOWY <s>
+wseq1: 0 2 3 4 5 6 7 1
+phseq1: sil | dh ax | n ay t | w aa z | k aa m | ae n d | s n ow iy | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -7708.018555
+
+
+------
+...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0474.wav
+STAT: 84000 samples (5.25 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> I SAILED THIRD MATE IN THE LITTLE VAMPIRE BEFORE YOU WERE BORN <s>
+pass1_best_wordseq: 0 8 9 10 11 12 2 13 14 15 16 17 18 1
+pass1_best_phonemeseq: sil | ay | s ey l d | th er d | m ey t | ix n | dh ax | l ih dx ax l | v ae m p ay r | b ix f ao r | y uw | w er | b ao r n | sil
+pass1_best_score: -12867.371094
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 31 generated, 31 pushed, 32 nodes popped in 523
+sentence1: <s> I SAILED THIRD MATE IN THE LITTLE VAMPIRE BEFORE YOU WERE BORN <s>
+wseq1: 0 8 9 10 11 12 2 13 14 15 16 17 18 1
+phseq1: sil | ay | s ey l d | th er d | m ey t | ix n | dh ax | l ih dx ax l | v ae m p ay r | b ix f ao r | y uw | w er | b ao r n | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -12873.716797
+
+
+------
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0475.wav
+STAT: 102000 samples (6.38 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> HIS OUTSTRETCHED ARM DROPPED TO HIS SIDE AND HE PAUSED <s>
+pass1_best_wordseq: 0 19 20 21 22 23 19 24 6 25 26 1
+pass1_best_phonemeseq: sil | hh ih z | aw t s t r eh ch t | aa r m | d r aa p t | t uw | hh ih z | s ay d | ae n d | hh iy | p ao z d | sil
+pass1_best_score: -15558.307617
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 20 generated, 20 pushed, 21 nodes popped in 636
+sentence1: <s> HIS OUTSTRETCHED ARM DROPPED TO HIS SIDE AND HE PAUSED <s>
+wseq1: 0 19 20 21 22 23 19 24 6 25 26 1
+phseq1: sil | hh ih z | aw t s t r eh ch t | aa r m | d r aa p t | t uw | hh ih z | s ay d | ae n d | hh iy | p ao z d | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -15555.799805
+
+
+------
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0476.wav
+STAT: 74000 samples (4.62 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> AT THIS MOMENT I FELT A STIR AT MY SHOULDER <s>
+pass1_best_wordseq: 0 27 28 29 8 30 31 32 27 33 34 1
+pass1_best_phonemeseq: sil | ae t | dh ih s | m ow m ax n t | ay | f eh l t | ax | s t er | ae t | m ay | sh ow l d er | sil
+pass1_best_score: -11121.852539
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 25 generated, 25 pushed, 26 nodes popped in 461
+sentence1: <s> AT THIS MOMENT I FELT A STIR AT MY SHOULDER <s>
+wseq1: 0 27 28 29 8 30 31 32 27 33 34 1
+phseq1: sil | ae t | dh ih s | m ow m ax n t | ay | f eh l t | ax | s t er | ae t | m ay | sh ow l d er | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -11111.565430
+
+
+------
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0477.wav
+STAT: 94000 samples (5.88 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> WADA LOUIS AND THE STEWARD ARE SERVANTS OF ASIATIC BREED <s>
+pass1_best_wordseq: 0 35 36 6 2 37 38 39 40 41 42 1
+pass1_best_phonemeseq: sil | w aa dx ax | l uw ix s | ae n d | dh ax | s t uw er d | aa r | s er v ax n t s | ah v | ey zh iy ae dx ix k | b r iy d | sil
+pass1_best_score: -14411.776367
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 28 generated, 28 pushed, 29 nodes popped in 586
+sentence1: <s> WADA LOUIS AND THE STEWARD ARE SERVANTS OF ASIATIC BREED <s>
+wseq1: 0 35 36 6 2 37 38 39 40 41 42 1
+phseq1: sil | w aa dx ax | l uw ix s | ae n d | dh ax | s t uw er d | aa r | s er v ax n t s | ah v | ey zh iy ae dx ix k | b r iy d | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -14404.938477
+
+
+------
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0478.wav
+STAT: 102000 samples (6.38 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> ALSO SHE HAS FORBIDDEN THEM SMOKING THEIR PIPES IN THE AFTER-ROOM <s>
+pass1_best_wordseq: 0 43 44 45 46 47 48 49 50 12 2 51 1
+pass1_best_phonemeseq: sil | ao l s ow | sh iy | hh ae z | f ao r b ix d ax n | dh eh m | s m ow k ix ng | dh eh r | p ay p s | ix n | dh ax | ae f t er r uw m | sil
+pass1_best_score: -15274.973633
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 36 generated, 36 pushed, 37 nodes popped in 636
+sentence1: <s> ALSO SHE HAS FORBIDDEN THEM SMOKING THEIR PIPES IN THE AFTER-ROOM <s>
+wseq1: 0 43 44 45 46 47 48 49 50 12 2 51 1
+phseq1: sil | ao l s ow | sh iy | hh ae z | f ao r b ix d ax n | dh eh m | s m ow k ix ng | dh eh r | p ay p s | ix n | dh ax | ae f t er r uw m | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -15253.385742
+
+
+------
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0479.wav
+STAT: 100000 samples (6.25 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> I TRIED TO READ GEORGE MOORE LAST NIGHT AND WAS DREADFULLY BORED <s>
+pass1_best_wordseq: 0 8 52 23 53 54 55 56 3 6 4 57 58 1
+pass1_best_phonemeseq: sil | ay | t r ay d | t uw | r eh d | jh ao r jh | m uh r | l ae s t | n ay t | ae n d | w aa z | d r eh d f ax l iy | b ao r d | sil
+pass1_best_score: -15416.465820
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 33 generated, 33 pushed, 34 nodes popped in 623
+sentence1: <s> I TRIED TO READ GEORGE MOORE LAST NIGHT AND WAS DREADFULLY BORED <s>
+wseq1: 0 8 52 23 53 54 55 56 3 6 4 57 58 1
+phseq1: sil | ay | t r ay d | t uw | r eh d | jh ao r jh | m uh r | l ae s t | n ay t | ae n d | w aa z | d r eh d f ax l iy | b ao r d | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -15414.694336
+
+
+------
+................................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0480.wav
+STAT: 54000 samples (3.38 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> TOM SPINK HAS A HARPOON <s>
+pass1_best_wordseq: 0 59 60 45 31 61 1
+pass1_best_phonemeseq: sil | t aa m | s p ih ng k | hh ae z | ax | hh aa r p uw n | sil
+pass1_best_score: -7648.874023
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 24 generated, 24 pushed, 25 nodes popped in 336
+sentence1: <s> TOM SPINK HAS A HARPOON <s>
+wseq1: 0 59 60 45 31 61 1
+phseq1: sil | t aa m | s p ih ng k | hh ae z | ax | hh aa r p uw n | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -7644.272461
+
+
+------
+.................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0481.wav
+STAT: 90000 samples (5.62 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> NIMROD REPLIED WITH A SLIGHT MANIFESTATION OF SENSITIVENESS <s>
+pass1_best_wordseq: 0 62 63 64 31 65 66 40 67 1
+pass1_best_phonemeseq: sil | n ih m r aa d | r ix p l ay d | w ih dh | ax | s l ay t | m ae n ax f eh s t ey sh ax n | ah v | s eh n s ax dx ix v n ax s | sil
+pass1_best_score: -13571.638672
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 30 generated, 30 pushed, 31 nodes popped in 561
+sentence1: <s> NIMROD REPLIED WITH A SLIGHT MANIFESTATION OF SENSITIVENESS <s>
+wseq1: 0 62 63 64 31 65 66 40 67 1
+phseq1: sil | n ih m r aa d | r ix p l ay d | w ih dh | ax | s l ay t | m ae n ax f eh s t ey sh ax n | ah v | s eh n s ax dx ix v n ax s | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -13570.864258
+
+
+------
+........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................### read waveform input
+Stat: adin_file: input speechfile: /tmp/_Bl717XB8v/AndreyBarrientosCostaRica-20130710-oqe/a0482.wav
+STAT: 86000 samples (5.38 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+pass1_best: <s> AND THEIR CHIEF VIRTUE LIES IN THAT THEY WILL NEVER WEAR OUT <s>
+pass1_best_wordseq: 0 6 49 68 69 70 12 71 72 73 74 75 76 1
+pass1_best_phonemeseq: sil | ae n d | dh eh r | ch iy f | v er ch uw | l ay z | ix n | dh ae t | dh ey | w ih l | n eh v er | w eh r | aw t | sil
+pass1_best_score: -13275.889648
+### Recognition: 2nd pass (RL heuristic best-first)
+WARNING: 00 _default: hypothesis stack exhausted, terminate search now
+STAT: 00 _default: 1 sentences have been found
+STAT: 00 _default: 27 generated, 27 pushed, 28 nodes popped in 536
+sentence1: <s> AND THEIR CHIEF VIRTUE LIES IN THAT THEY WILL NEVER WEAR OUT <s>
+wseq1: 0 6 49 68 69 70 12 71 72 73 74 75 76 1
+phseq1: sil | ae n d | dh eh r | ch iy f | v er ch uw | l ay z | ix n | dh ae t | dh ey | w ih l | n eh v er | w eh r | aw t | sil
+cmscore1: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+score1: -13249.819336
+
+
+------
+10 files processed
+### read waveform input
